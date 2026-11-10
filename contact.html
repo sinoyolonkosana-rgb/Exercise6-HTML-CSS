@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+  <!--header section--> 
+    <header class="main header">
+            <h1>Get in touch & book a appointment</h1>
+            <p>Please fill the form below or check our available schedule table</p>
+        </header>
+    <div class="container">
+        <!--contact form section-->
+        <section class="contact form">
+            <h2>Contact Form</h2>
+            <p>If you have any questions or inquiries, please fill out the form below and we will get back to you as soon as possible.</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+         </section>
+
+         <!--schedule table section-->
+         <section class="schedule table">
+            <h2>Available Appointment times</h2>
+            <div class="table section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time slot</th>
+                        <th>Monday-Wednesday</th>
+                        <th>Thursday-Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9:00 AM - 5:00 PM</td>
+                        <td>Booked</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>9:00 AM - 5:00 PM</td>
+                        <td>Booked</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>9:00 AM - 12:00 PM</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>12:00 PM - 3:00 PM</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>1:00 PM - 4:00 PM</td>
+                        <td>Available</td>
+                        <td>colspan="2" class="break row">Break Time</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            </div>
+         </section>
+</body>
+</html>
